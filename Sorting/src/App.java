@@ -17,12 +17,13 @@ public class App {
 			stack1.push((int) (Math.random() * 1000));
 		}
 
-		// Printing the sected integers
+		// Printing the selected integers
 
 		while (!(stack1.empty())) {
 			System.out.print(stack1.peek() + " ");
 			stack2.push(stack1.pop());
 		}
+		System.out.println();
 		System.out.println();
 
 		while (!(stack2.empty())) {
@@ -45,10 +46,8 @@ public class App {
 			rep = false;
 
 			while (!(stack1.empty())) {
-
-				if ((int) stack1.peek() <= max) {
-
-					rep = ((int) stack1.peek() < max);
+				if ((int) stack1.peek() < max) {
+					rep = true;
 					stack2.push(stack1.pop());
 				} else {
 					stack2.push(max);
