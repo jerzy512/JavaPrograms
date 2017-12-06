@@ -31,8 +31,11 @@ public class App {
 
 		/*
 		 * Numbers are moved from stack1 to stack2 and back so that the largest 
-		 * will be on the bottom of stack1.
-		 * We repeat it until the variable rep is true.
+		 * will be on the bottom of stack1. After each repetition more and more 
+		 * numbers on the bottom of stack1 will be sorted.
+		 * We repeat it as long as the variable rep is true, which signals that
+		 * the ordering was changed during the run. When rep is false to the end
+		 * it means that the sorting is done.
 		 */
 
 		boolean rep;
