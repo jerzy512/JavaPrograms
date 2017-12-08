@@ -46,7 +46,7 @@ public class App {
 			rep = false;
 
 			while (!(stack1.empty())) {
-				if ((int) stack1.peek() < max) {
+				if (stack1.peek().compareTo(max) < 0 ) {
 					rep = true;
 					stack2.push(stack1.pop());
 				} else {
@@ -55,7 +55,7 @@ public class App {
 				}
 			}
 			stack1.push(max);
-
+			
 			while (!(stack2.empty())) {
 				stack1.push(stack2.pop());
 			}
