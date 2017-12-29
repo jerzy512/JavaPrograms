@@ -1,9 +1,11 @@
 package program;
 
 import java.awt.FlowLayout;
+import java.awt.Font;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
+import javax.swing.BorderFactory;
 import javax.swing.JButton;
 import javax.swing.JPanel;
 
@@ -18,6 +20,8 @@ public class Toolbar extends JPanel implements ActionListener {
 	private StringListener listener;
 	
 	public Toolbar() {
+		setBorder(BorderFactory.createEtchedBorder());
+        
 		button1 = new JButton("Action 1");
 		button2 = new JButton("Action 2");
 		button3 = new JButton("Action 3");

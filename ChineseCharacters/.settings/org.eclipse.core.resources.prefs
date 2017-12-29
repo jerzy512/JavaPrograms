@@ -1,3 +1,4 @@
 eclipse.preferences.version=1
-encoding//src/program/App.java=UTF-8
-encoding/char_data.txt=UTF-8
+encoding//src/data/LearnLists.java=UTF-8
+encoding//src/gui/LearnWindow.java=UTF-8
+encoding//src/gui/MainFrame.java=UTF-8
